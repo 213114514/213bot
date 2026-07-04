@@ -1,0 +1,16 @@
+# 更多配置请参考: https://github.com/hect0x7/JMComic-Crawler-Python/blob/master/assets/docs/sources/option_file_syntax.md
+dir_rule:
+  base_dir: C:\Users\86139\Desktop\qqbot\auto213\data\nonebot_plugin_jmcomic
+
+plugins:
+  after_photo:
+    - plugin: img2pdf
+      kwargs:
+        pdf_dir: C:\Users\86139\Desktop\qqbot\auto213\data\nonebot_plugin_jmcomic
+        filename_rule: Pid
+  
+  after_album:
+    - plugin: img2pdf
+      kwargs:
+        pdf_dir: C:\Users\86139\Desktop\qqbot\auto213\data\nonebot_plugin_jmcomic
+        filename_rule: Aname

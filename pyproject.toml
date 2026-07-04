@@ -1,0 +1,18 @@
+[project]
+name = "auto213"
+version = "0.1.0"
+description = "auto213"
+readme = "README.md"
+requires-python = ">=3.9, <4.0"
+
+[tool.nonebot]
+adapters = [
+    { name = "OneBot V11", module_name = "nonebot.adapters.onebot.v11" }
+]
+plugins = [ "nonebot_plugin_whoasked", "pokepoke_miss", "nonebot_plugin_roll", "nonebot_plugin_anime_trace", "nonebot_plugin_simple_block", "nonebot_plugin_miragetank", "nonebot_plugin_bilicover", "nonebot_plugin_today_waifu", "nonebot_plugin_memes", "nonebot_plugin_resolver2", "nonebot_plugin_calc24", "nonebot_plugin_learning_chat", "nonebot_plugin_ottohzys", "nonebot_plugin_fakemsg","nonebot_plugin_picsearcher", "nonebot_plugin_picsetu", "nonebot_plugin_jmcomic"]
+plugin_dirs = []
+builtin_plugins = ["echo"]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
